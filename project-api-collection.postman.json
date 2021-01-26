@@ -1,0 +1,2083 @@
+{
+    "item": [
+        {
+            "info": {
+                "name": "categories",
+                "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+            },
+            "item": [
+                {
+                    "name": "[admin] Create new Category",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "image",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/categories",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "categories"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Update Category",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "image",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/categories/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "categories",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] List categories",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/categories",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "categories"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Get Category",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/categories/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "categories",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Delete Category",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/categories/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "categories",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[site] Show single record of categories",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/categories/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "categories",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[site] Show list categories",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/categories",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "categories"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "variable": [],
+            "name": "categories"
+        },
+        {
+            "info": {
+                "name": "customers",
+                "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+            },
+            "item": [
+                {
+                    "name": "[admin] Create new Customer",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "email",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "phoneNumber",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "password",
+                                    "type": "text",
+                                    "value": "String"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/customers",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "customers"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Update Customer",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "email",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "phoneNumber",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "password",
+                                    "type": "text",
+                                    "value": "String"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/customers/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "customers",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] List customers",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/customers",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "customers"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Get Customer",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/customers/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "customers",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Delete Customer",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/customers/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "customers",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[site] Show single record of customers",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/customers/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "customers",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[site] Show list customers",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/customers",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "customers"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "variable": [],
+            "name": "customers"
+        },
+        {
+            "info": {
+                "name": "comments",
+                "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+            },
+            "item": [
+                {
+                    "name": "[admin] Create new Comment",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "comment",
+                                    "type": "text",
+                                    "value": "String"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/Posts/comments",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "Posts/comments"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Update Comment",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "comment",
+                                    "type": "text",
+                                    "value": "String"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/Posts/comments/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "Posts/comments",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] List comments",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/Posts/comments",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "Posts/comments"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Get Comment",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/Posts/comments/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "Posts/comments",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Delete Comment",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/Posts/comments/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "Posts/comments",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[site] Show single record of comments",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/Posts/comments/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "Posts/comments",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[site] Show list comments",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/Posts/comments",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "Posts/comments"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "variable": [],
+            "name": "comments"
+        },
+        {
+            "info": {
+                "name": "posts",
+                "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+            },
+            "item": [
+                {
+                    "name": "[admin] Create new Post",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "title",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "description",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "iamge",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/posts",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "posts"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Update Post",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "title",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "description",
+                                    "type": "text",
+                                    "value": "String"
+                                },
+                                {
+                                    "key": "iamge",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/posts/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "posts",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] List posts",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/posts",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "posts"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Get Post",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/posts/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "posts",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Delete Post",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/posts/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "posts",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[site] Show single record of posts",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/posts/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "posts",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[site] Show list posts",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/posts",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "posts"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "variable": [],
+            "name": "posts"
+        },
+        {
+            "info": {
+                "name": "permissions",
+                "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+            },
+            "item": [
+                {
+                    "name": "[admin] Create new Permission",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "permission",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "key",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "group",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/permissions",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "permissions"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Update Permission",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "permission",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "key",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "group",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/permissions/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "permissions",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] List permissions",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/permissions",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "permissions"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Get Permission",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/permissions/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "permissions",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Delete Permission",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/permissions/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "permissions",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "variable": [],
+            "name": "permissions"
+        },
+        {
+            "info": {
+                "name": "users",
+                "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+            },
+            "item": [
+                {
+                    "name": "[admin] Create new User",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "email",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "user_group_id",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Update User",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "email",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "user_group_id",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] List users",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Get User",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Delete User",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Login User",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "email",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/login",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "login"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "variable": [],
+            "name": "users"
+        },
+        {
+            "info": {
+                "name": "usersgroups",
+                "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+            },
+            "item": [
+                {
+                    "name": "[admin] Create new UsersGroup",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "permissions",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/groups",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "groups"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Update UsersGroup",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "name",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "permissions",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/groups/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "groups",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] List usersgroups",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/groups",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "groups"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Get UsersGroup",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/groups/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "groups",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "[admin] Delete UsersGroup",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{tokenType}} {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/admin/users/groups/{id}",
+                            "host": "{{host}}",
+                            "protocol": "{{protocol}}",
+                            "path": [
+                                "{{baseUrl}}",
+                                "api",
+                                "admin",
+                                "users",
+                                "groups",
+                                "{id}"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "variable": [],
+            "name": "usersgroups"
+        }
+    ],
+    "variable": {
+        "baseUrl": {
+            "key": "baseUrl",
+            "type": "string"
+        },
+        "host": {
+            "key": "host",
+            "type": "string"
+        },
+        "protocol": {
+            "key": "protocol",
+            "type": "string"
+        },
+        "token": {
+            "key": "token",
+            "type": "string"
+        },
+        "tokenType": {
+            "key": "tokenType",
+            "value": "Bearer",
+            "type": "string"
+        }
+    },
+    "info": {
+        "name": "Postman Collection with Mongez",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+}
